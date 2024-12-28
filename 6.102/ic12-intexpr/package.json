@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.2.x"
+  },
+  "scripts": {
+    "warmupTest": "tsc && mocha --require source-map-support/register dist/test/warmupTest.js",
+    "grammarTest": "tsc && mocha --require source-map-support/register dist/test/grammarTest.js",
+    "parserTest": "tsc && mocha --require source-map-support/register dist/test/parserTest.js"
+  },
+  "dependencies": {
+    "parserlib": "file:/./lib/parserlib-3.2.3.tgz"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.2.5",
+    "mocha": "^10.2.0",
+    "source-map-support": "^0.5.21"
+  }
+}
