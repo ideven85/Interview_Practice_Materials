@@ -17,10 +17,7 @@ Return the minimum number of consecutive cards you have to pick up to have a pai
         int[] distinct =Arrays.stream(cards).distinct().toArray();
         if(distinct.length==0)
             return maximum;
-        Map<Integer,Integer> map = new HashMap<>();
-        for(int num:cards){
-            map.compute(num,(k,v)->v==null?1:++v);
-        }
+        
     }
 
     public static String removeDigit(String number, char digit) {
