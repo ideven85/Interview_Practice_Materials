@@ -12,12 +12,15 @@ public class Problems {
 
 Return the minimum number of consecutive cards you have to pick up to have a pair of matching cards among the picked cards. If it is impossible to have matching cards, return -1.
          */
-        int left=0,right=0;
-        int maximum=-1;
+        int left=0,right=cards.length-1;
+        int minimum=Integer.MAX_VALUE;
         int[] distinct =Arrays.stream(cards).distinct().toArray();
         if(distinct.length==0)
-            return maximum;
-        
+            return -1;
+        while(left<right){
+           
+        }
+        return -1;
     }
 
     public static String removeDigit(String number, char digit) {
