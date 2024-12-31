@@ -1,5 +1,6 @@
 from bisect import bisect_right
 from collections import Counter
+from functools import cache
 from typing import List
 
 

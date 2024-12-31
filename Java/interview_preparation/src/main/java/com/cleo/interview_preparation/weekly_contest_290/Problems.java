@@ -17,9 +17,8 @@ Return the minimum number of consecutive cards you have to pick up to have a pai
         int[] distinct =Arrays.stream(cards).distinct().toArray();
         if(distinct.length==0)
             return -1;
-        while(left<right){
-            if(cards[left]==cards[right]){
-        }
+
+
         return -1;
     }
 
@@ -31,14 +30,14 @@ Return the minimum number of consecutive cards you have to pick up to have a pai
         for(char c:number.toCharArray()){
             if(c==digit){
                 String current = number.substring(0,i)+number.substring(i+1);
-                
+
             }
             i++;
 
         }
         return String.valueOf(maximum);
-        
-        
+
+
     }
     public static void main(String[] args) {
         String number ="2998589353917872714814599237991174513476623756395992135212546127959342974628712329595771672911914471";

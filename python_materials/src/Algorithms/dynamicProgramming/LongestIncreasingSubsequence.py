@@ -18,7 +18,7 @@ def lis(nums):
 
 # todo
 def findNumberOfLIS(nums: List[int]) -> int:
-    pass
+
 
 
 if __name__ == "__main__":

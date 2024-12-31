@@ -84,8 +84,6 @@ def nonConstructibleChange(coins: List[int]) -> int:
     return change + 1
 
 
-def insert(nums1: List[int], m: int, nums2: List[int], n: int, position):
-    pass
 
 
 def threeSum(nums: List[int]) -> List[List[int]]:
@@ -141,30 +139,6 @@ def threeSumV2(nums: List[int]) -> List[List[int]]:
                         low += 1
     return answer
 
-
-def subArraySum(arr: list, n: int, s: int) -> list:
-    """
-
-    :param arr: Unsorted array but positive elements
-    :param n: size of arr
-    :param s: sum to check
-    :return: list of indices for which subarray sums to s
-    """
-    answer = list()
-    x = 0
-    first = 0
-    second = 0
-    if n < 2:
-        return [-1]
-
-    for i in range(n):
-        second = i
-        x += arr[i]
-        if x == s:
-            return [first, second]
-        elif x > s:
-            first += 1
-            x = arr[first]
 
 
 def firstMissingPositiveforContinousN(nums: List[int]) -> int:
