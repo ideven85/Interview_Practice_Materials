@@ -7,3 +7,5 @@ for value in data:
     total += value
     average = total / n
     print(average)
+
+

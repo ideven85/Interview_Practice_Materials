@@ -18,7 +18,7 @@ Return the minimum number of consecutive cards you have to pick up to have a pai
         if(distinct.length==0)
             return -1;
         while(left<right){
-           
+            if(cards[left]==cards[right]){
         }
         return -1;
     }
